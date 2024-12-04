@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* DARK MODE */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+body.dark-mode button {
+    background-color: white; /* Warna tombol putih saat dark mode */
+    border: none; /* Menghilangkan border saat dark mode */
+    color: black; /* Warna ikon tetap hitam */
+}
+
+button {
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Ukuran ikon */
+    background: none; /* Tanpa latar belakang */
+    border: 2px solid black; /* Border hitam saat light mode */
+    border-radius: 5px; /* Sudut border yang melengkung */
+    transition: background-color 0.3s, border-color 0.3s; /* Transisi */
+}
+body button {
+    color: black; /* Warna ikon hitam saat light mode */
+}
+button:focus {
+    outline: none; /* Menghilangkan outline saat tombol fokus */
+}
+/* END OF BUTTON */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px;
+}
+.text, .image {
+    width: 45%; /* Mengatur lebar elemen */
+    margin-bottom: 20px;
+}
+.text {
+    order: 1; /* Teks di sebelah kiri */
+}
+.text2 {
+    order: 2; /* Teks di sebelah kiri */
+}
+.text3 {
+    order: 1; /* Teks di sebelah kiri */
+}
+.image {
+    order: 2; /* Gambar di sebelah kanan */
+    text-align: center;
+}
+.image2{
+    order: 1;
+    text-align: center;
+}
+.image3{
+    order: 2;
+    text-align: center;
+}
+.image img {
+    max-width: 100%; /* Agar gambar responsif */
+    height: auto;
+}
+.image2 img {
+    max-width: 100%; /* Agar gambar responsif */
+    height: auto;
+}
+.image3 img {
+    max-width: 100%; /* Agar gambar responsif */
+    height: auto;
+}
